@@ -11,6 +11,8 @@ const folderPath = args[0] || "mes";
   try {
     const files = fs.readdirSync(folderPath);
     files.forEach((file) => {
+      if (!file.includes(".MES")) return;
+
       const filePath = path.join(folderPath, file);
       const content = fs.readFileSync(filePath, "utf8");
 
