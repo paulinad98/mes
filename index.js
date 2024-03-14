@@ -30,7 +30,8 @@ const folderPath = args[0] || "mes";
     for (const [key, value] of Object.entries(data)) {
       await chart.getDoubleChart(
         [value.firstHalf, value.secondHalf],
-        `${key.replace("MES", "png")}`
+        `${key.replace("MES", "png")}`,
+        folderPath
       );
     }
   } catch (err) {

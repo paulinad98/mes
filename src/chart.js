@@ -35,6 +35,7 @@ export class LineChart {
   }
 
   async getDoubleChart(datasets, name, path) {
+    console.log(`${path}/${name}`);
     const chart1 = await this.getChartImage({ data: datasets[0] });
     const chart2 = await this.getChartImage({ data: datasets[1] });
 
