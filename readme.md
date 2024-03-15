@@ -30,7 +30,7 @@ For convenience, if your MES files are in a folder named mes within your project
 
 ## Generate MES Average
 
-## Getting Started
+### Getting Started
 
 Install all required packages by running:
 
