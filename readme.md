@@ -44,4 +44,4 @@ To calculate the average from your MES files, create a folder within the project
   npm run avg.js '< folder-path >' 'N'
 ```
 
-This will generate all the avg files in < folder-name >.
+This will generate all the avg files in < folder-path >.
