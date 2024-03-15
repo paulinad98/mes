@@ -38,10 +38,10 @@ Install all required packages by running:
   npm install
 ```
 
-To calculate the average from your MES files, create a folder within the project directory for your MES files. You can specify how many files to skip when calculating the average by setting a value for N in the following command:
+To calculate the average from your MES files, create a folder within the project directory for your MES files. Then, execute the following command, replacing < folder-path > with the path to your folder. You can specify how many files to skip when calculating the average by setting a value for N in the following command:
 
 ```bash
   npm run avg.js '< folder-path >' 'N'
 ```
 
-This will generate all the avg files in <folder-name>.
+This will generate all the avg files in < folder-name >.
