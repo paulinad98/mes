@@ -27,6 +27,16 @@ function generateCombinations(N, C) {
   return result;
 }
 
+function generateSequentialCombinations(N, C) {
+  const result = [];
+  const setSize = N - C;
+  for (let i = 0; i <= C; i++) {
+    const sequence = Array.from({ length: setSize }, (_, index) => i + index);
+    result.push(sequence);
+  }
+  return result;
+}
+
 (async () => {
   const mesData = [];
   const avgSet = [];
@@ -45,7 +55,7 @@ function generateCombinations(N, C) {
       mesData.push(dataset);
     });
 
-    const combinations = generateCombinations(
+    const combinations = generateSequentialCombinations(
       mesData.length,
       deletedElementsCount
     );
