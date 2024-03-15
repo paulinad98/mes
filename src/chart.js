@@ -19,7 +19,7 @@ export class LineChart {
     return await this.chart.renderToBuffer({
       type: "line",
       data: {
-        labels: labels || data,
+        labels: labels || data.map(() => ""),
         datasets: [
           {
             label: name,
